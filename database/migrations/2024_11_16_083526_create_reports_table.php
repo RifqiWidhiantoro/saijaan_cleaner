@@ -9,19 +9,19 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up()
+    public function up() 
     {
         Schema::create('reports', function (Blueprint $table) {
             $table->id();
-            $table->string('address');
-            $table->text('description');
-            $table->string('photo_path')->nullable(); // untuk menyimpan path foto laporan
-            $table->decimal('latitude', 10, 8);
-            $table->decimal('longitude', 11, 8);
+            $table->string('judul');
+            $table->text('deskripsi');
+            $table->decimal('latitude', 10, 7);
+            $table->decimal('longitude', 10, 7);
+            $table->json('photos')->nullable();
             $table->timestamps();
         });
     }
-
+    
     /**
      * Reverse the migrations.
      */

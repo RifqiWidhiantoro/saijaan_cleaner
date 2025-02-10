@@ -160,7 +160,7 @@
             color: var(--text-color); /* Menggunakan variabel warna */
             margin: 0;
         }
-                /* Link di sidebar */
+        /* Link di sidebar */
         .sidebar a {
             color: var(--text-color); /* Menggunakan variabel warna */
             text-decoration: none;

@@ -20,6 +20,6 @@ class Report extends Model
     // Relasi dengan CleaningProgress
     public function cleaningProgress()
     {
-        return $this->hasOne(CleaningProgress::class);
+        return $this->hasMany(CleaningProgress::class);
     }
 }
